@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script>
+        function loginSim() {
+            location.assign("/client");
+        }
+    </script>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<fieldset style="width: 350px;">
+    <legend>Simulate Login</legend>
+    <label for="username">Email Address:</label><input id="username" type="text"/>
+    <button id="login" onclick="loginSim()">Login</button>
+</fieldset>
+</body>
+</html>
